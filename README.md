@@ -1,7 +1,7 @@
----
-sidebar:'auto'
----
+# ClassicTheory
 
-# Construction In Progress
+## TheoryCafting
 
-Things, can only get better.
+## Wiki Pages
+
+ - [Experience](/experience.md)
