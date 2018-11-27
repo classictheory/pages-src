@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:build": "vuepress build docs"
+    "build": "vuepress build",
+    "deploy": "./deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/classicthoery/classictheory.github.io#readme",
   "dependencies": {
+    "bulma": "^0.7.2",
     "vuepress": "^0.14.8"
-  }  
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0"
+  }
 }
