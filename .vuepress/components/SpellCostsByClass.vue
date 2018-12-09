@@ -73,7 +73,8 @@
             if (spell.hasRanks) {
               let ranks = Object.keys(spell.ranks)
               ranks.forEach(rank => {
-
+                console.log(spell.ranks)
+                console.log(spell.ranks[rank])
                 cost += spell.ranks[rank].cost
               })
             } else {
