@@ -1,0 +1,3 @@
+# Class Spell Costs
+
+<SpellCostsByClass />
