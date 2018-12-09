@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Experience-XPTable-XP3Column :xp="xp" />
+        <component v-bind:is="xpComponent" :xp="xp"></component>
 
         <!-- XP Calculations -->
         <Experience-Breakpoints :xp="xp" />
@@ -17,7 +17,16 @@
         xp: WoWExperience,
       }
     },
-
+    computed: {
+      xpComponent () {
+        let w = window.innerWidth
+        
+        if (w > 1024) {
+          return 'Experience-XPTable-XP4Column'
+        }
+        return 'Experience-XPTable-XP3Column'
+      }
+    }
   }
 </script>
 

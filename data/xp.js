@@ -8,35 +8,36 @@ export const WoWExperience = {
 }
 
 export const TwentyArray = [...Array(20).keys()]
+export const FifteenArray = [...Array(15).keys()]
 
-/**
- * Get the list of experience in a 3 column table form.
- * @returns {{column1: {}, column2: {}, column3: {}}}
- */
-function getXpTables() {
-  let XPTables = {
-    column1: {},
-    column2: {},
-    column3: {},
-  }
-// // Levels 1-20
-  let twentyLevels = TwentyArray
+// /**
+//  * Get the list of experience in a 3 column table form.
+//  * @returns {{column1: {}, column2: {}, column3: {}}}
+//  */
+// function getXpTables() {
+//   let XPTables = {
+//     column1: {},
+//     column2: {},
+//     column3: {},
+//   }
+// // // Levels 1-20
+//   let twentyLevels = TwentyArray
 
-  twentyLevels.forEach(function (i) {
-    // Column1
-    let col1level = i + 1;
-    XPTables.column1[col1level] = WoWExperience[col1level]
-    let col2level = i + 21;
-    XPTables.column2[col2level] = WoWExperience[col2level]
-    let col3level = i + 41;
-    // Don't add level 60
-    if (col3level !== 60) {
-      XPTables.column3[col3level] = WoWExperience[col3level]
-    }
-    XPTables.column3[60] = '-'
-  })
+//   twentyLevels.forEach(function (i) {
+//     // Column1
+//     let col1level = i + 1;
+//     XPTables.column1[col1level] = WoWExperience[col1level]
+//     let col2level = i + 21;
+//     XPTables.column2[col2level] = WoWExperience[col2level]
+//     let col3level = i + 41;
+//     // Don't add level 60
+//     if (col3level !== 60) {
+//       XPTables.column3[col3level] = WoWExperience[col3level]
+//     }
+//     XPTables.column3[60] = '-'
+//   })
 
-  return XPTables
-}
+//   return XPTables
+// }
 
-export const ExperienceTables = getXpTables();
+// export const ExperienceTables = getXpTables();
