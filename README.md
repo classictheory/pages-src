@@ -5,3 +5,4 @@
 ## Wiki Pages
 
  - [Experience](/experience.md)
+ - [Talents](/talents.md)
