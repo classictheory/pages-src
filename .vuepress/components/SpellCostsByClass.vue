@@ -18,6 +18,8 @@
 </template>
 
 <script>
+  import { HunterSpells } from '../../data/classes/hunter/spells'
+
   export default {
     name: 'SpellCostsByClass',
     computed: {
@@ -25,7 +27,7 @@
         return [
           {
             wowClass: 'Hunter',
-            cost: 0,
+            cost: this.calculateClassSpellCost('hunter'),
           },
           {
             wowClass: 'Mage',
@@ -53,9 +55,29 @@
           },
           {
             wowClass: 'Warrior',
-            cost: 0,
+            cost: this.calculateClassSpellCost('warrior'),
           }
         ]
+      }
+    },
+    methods: {
+      calculateClassSpellCost(wowClass) {
+        let spells = []
+        let cost = 0
+        // Load the appropriate spells
+        switch (wowClass) {
+          case 'hunter': spells = HunterSpells; break;
+
+        }
+        spells.forEach(spell => {
+            if (spell.hasRanks) {
+
+            } else {
+              cost += spell.cost
+            }
+        })
+
+        return cost
       }
     }
   }

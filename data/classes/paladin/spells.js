@@ -1,5 +1,5 @@
 const FlashOfLight = {}
 
-export const PaladinSpells = {
+export const PaladinSpells = [
   FlashOfLight,
-}
+]
