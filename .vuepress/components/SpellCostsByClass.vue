@@ -71,7 +71,11 @@
         }
         spells.forEach(spell => {
             if (spell.hasRanks) {
+              let ranks = Object.keys(spell.ranks)
+              ranks.forEach(rank => {
 
+                cost += spell.ranks[rank].cost
+              })
             } else {
               cost += spell.cost
             }
