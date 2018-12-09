@@ -18,6 +18,14 @@
       }
     },
     computed: {
+      columns () {
+        let w = window.innerWidth
+
+        if (w > 1024) {
+          return 4
+        }
+        return 3
+      },
       xpComponent () {
         let w = window.innerWidth
         

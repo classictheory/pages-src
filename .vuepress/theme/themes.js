@@ -7,7 +7,7 @@ export function AllianceTheme () {
         // Tables
         { name: '--th-bg', value: 'var(--theme-blue)' },
         { name: '--th-color', value: 'var(--theme-gold)' },
-        { name: '--theme-tr-stripe', value: '#010130' },
+        { name: '--theme-tr-stripe', value: '#00001b33' },
     ]
 
     let s = document.documentElement.style;

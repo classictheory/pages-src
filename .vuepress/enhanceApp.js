@@ -48,10 +48,10 @@ export default ({
     let output = ``
 
     if (wowValue.gold > 0) {
-      output += formatWoWCurrency(wowValue.gold, 'g')
+      output += formatWoWCurrency(wowValue.gold, 'g') + ' '
     }
     if (wowValue.silver > 0) {
-      output += formatWoWCurrency(wowValue.silver, 's')
+      output += formatWoWCurrency(wowValue.silver, 's') + ' '
     }
     output += formatWoWCurrency(wowValue.copper, 'c')
 
@@ -62,10 +62,10 @@ export default ({
     let output = ``
 
     if (wowValue.gold > 0) {
-      output += `<span class="wow-currency--gold">${formatWoWCurrency(wowValue.gold, 'g', true)}</span>`
+      output += `<span class="wow-currency--gold">${formatWoWCurrency(wowValue.gold, 'g', true)}</span> `
     }
     if (wowValue.silver > 0) {
-      output += `<span class="wow-currency--silver">${formatWoWCurrency(wowValue.silver, 's', true)}</span>`
+      output += `<span class="wow-currency--silver">${formatWoWCurrency(wowValue.silver, 's', true)}</span> `
     }
     output += `<span class="wow-currency--copper">${formatWoWCurrency(wowValue.copper, 'c', true)}</span>`
 
