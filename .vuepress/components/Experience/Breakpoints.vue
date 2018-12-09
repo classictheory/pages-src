@@ -2,17 +2,13 @@
     <div>
         <h2>Experience Breakpoints</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>1 - 20</th>
-                    <th>1 - 40</th>
-                    <th>1 - 60</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
+                    <th>1 - 20</th>
                     <td>{{ xpTo20 | number }}</td>
+                    <th>1 - 40</th>
                     <td>{{ xpTo40 | number }}</td>
+                    <th>1 - 60</th>
                     <td>{{ xpTo60 | number }}</td>
                 </tr>
             </tbody>

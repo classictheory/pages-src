@@ -1,27 +1,25 @@
 <template>
-    <table class="table">
-        <table>
-            <thead>
-            <tr>
-                <th>Level</th>
-                <th>XP</th>
-                <th>Level</th>
-                <th>XP</th>
-                <th>Level</th>
-                <th>XP</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="i in twenty">
-                <td>{{ i+1 }}</td>
-                <td>{{ xp[i+1] | number }}</td>
-                <td>{{ i+21 }}</td>
-                <td>{{ xp[i+21] | number }}</td>
-                <td>{{ i+41 }}</td>
-                <td>{{ (i+41 === 60) ? "-" : xp[i+41] | number }}</td>
-            </tr>
-            </tbody>
-        </table>
+    <table>
+        <thead>
+        <tr>
+            <th class="currentlevel">Level</th>
+            <th class="experience">XP</th>
+            <th class="currentlevel">Level</th>
+            <th class="experience">XP</th>
+            <th class="currentlevel">Level</th>
+            <th class="experience">XP</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="i in twenty">
+            <td class="currentlevel">{{ i+1 }}</td>
+            <td class="experience">{{ xp[i+1] | number }}</td>
+            <td class="currentlevel">{{ i+21 }}</td>
+            <td class="experience">{{ xp[i+21] | number }}</td>
+            <td class="currentlevel">{{ i+41 }}</td>
+            <td class="experience">{{ (i+41 === 60) ? "-" : xp[i+41] | number }}</td>
+        </tr>
+        </tbody>
     </table>
 </template>
 
@@ -42,5 +40,6 @@
 </script>
 
 <style scoped>
-
+.currentlevel { width: 4em; }
+.experience { width: 8em; }
 </style>
