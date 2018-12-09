@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <table>
+    <div class="card">
+        <table class="table is-striped">
             <thead>
                 <tr>
                     <th>Class</th>
@@ -8,7 +8,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="wClass in costsByClass">
+                <tr v-for="wClass in costsByClass" :class="`${wClass.cssClass}-fg`">
                     <td>{{ wClass.wowClass }}</td>
                     <td v-html="$options.filters.gold_html(wClass.cost)"></td>
                 </tr>
@@ -27,34 +27,42 @@
         return [
           {
             wowClass: 'Hunter',
+            cssClass: 'hunter',
             cost: this.calculateClassSpellCost('hunter'),
           },
           {
             wowClass: 'Mage',
+            cssClass: 'mage',
             cost: 0,
           },
           {
             wowClass: 'Paladin',
+            cssClass: 'paladin',
             cost: 0,
           },
           {
             wowClass: 'Priest',
+            cssClass: 'priest',
             cost: 0,
           },
           {
             wowClass: 'Rogue',
+            cssClass: 'rogue',
             cost: 0,
           },
           {
             wowClass: 'Shaman',
+            cssClass: 'shaman',
             cost: 0,
           },
           {
             wowClass: 'Warlock',
+            cssClass: 'warlock',
             cost: 0,
           },
           {
             wowClass: 'Warrior',
+            cssClass: 'warrior',
             cost: this.calculateClassSpellCost('warrior'),
           }
         ]

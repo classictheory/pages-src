@@ -1,0 +1,87 @@
+:root {
+    --text--primary: #ececec;
+    --site-background: #131313;
+    --t: transparent;
+    --th-color: #ececec;
+    --th-bg: #232323;
+    // WoW Colours
+
+    // Cloth Wearers
+    --class-priest: #fff;
+    --class-mage: #69CCF0;
+    --class-warlock: #9482C9;
+
+    // Leather Wearers
+    --class-rogue: #FFF569;
+    --class-druid: #FF7D0A;
+
+    // Mail Wearers
+    --class-hunter: #ABD473;
+    --class-shaman: #0070DE;
+
+    // Plate Wearers
+
+    --class-warrior: #C79C6E;
+    --class-paladin: #F58CBA;
+}
+
+html, body {
+    background: var(--site-background);
+}
+
+.table {
+    background: var(--t);
+    color: var(--text--primary);
+
+    &.is-striped tbody tr:not(.is-selected):nth-child(2n) {
+        background: var(--theme-tr-stripe, transparent);
+    }
+}
+
+.card {
+    background: var(--t);
+}
+
+.navbar {
+    background: #232323;
+}
+
+.navbar-item, .navbar-link {
+    color: #ececec;
+}
+
+main {
+    padding-top: 40px;
+}
+
+// Bulma Content Classes
+.content {
+    color: var(--text--primary);
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text--primary);
+    }
+
+    // Tables
+    .table {
+        thead {
+            th {
+                background: var(--th-bg, #232323);
+                color: var(--th-color, #ececec);
+            }
+        }
+    }
+}
+
+.priest-fg { color: var(--class-priest); }
+.mage-fg { color: var(--class-mage); }
+.warlock-fg { color: var(--class-warlock); }
+
+.rogue-fg { color: var(--class-rogue); }
+.druid-fg { color: var(--class-druid); }
+
+.hunter-fg { color: var(--class-hunter); }
+.shaman-fg { color: var(--class-shaman); }
+
+.warrior-fg { color: var(--class-warrior); }
+.paladin-fg { color: var(--class-paladin); }
