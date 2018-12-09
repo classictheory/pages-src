@@ -36,11 +36,25 @@
     computed: {
       spellsSortedByLevel () {
         // first make an object
-        let level = {}
+        let level = this.groupSpellsByCharacterLevel()
         let spells = []
-        let spellLevel
 
+        // Flatten object keyed arrays into one array
+        Object.keys(level).forEach(key => {
+          let charLevelSpells = level[key]
+          charLevelSpells.forEach(spell => {
+            spells.push(spell)
+          })
+        })
+
+        return spells
+      }
+    },
+    methods: {
+      groupSpellsByCharacterLevel() {
         // Parse the skills into an array against their level.
+        let level = {}
+        let spellLevel;
         Object.keys(this.spells).forEach(key => {
           let spell = this.spells[key]
           if (spell.hasRanks) {
@@ -72,17 +86,8 @@
             })
           }
         })
-
-        // Flatten object keyed arrays into one array
-        Object.keys(level).forEach(key => {
-          let charLevelSpells = level[key]
-          charLevelSpells.forEach(spell => {
-            spells.push(spell)
-          })
-        })
-
-        return spells
-      }
+        return level
+      },
     },
     mounted () {
       switch (this.wowClass) {
