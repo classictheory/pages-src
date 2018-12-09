@@ -1,5 +1,5 @@
 <template>
-    <table class="table">
+    <table class="table is-striped">
         <thead>
         <tr>
             <th class="currentlevel">Level</th>

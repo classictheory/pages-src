@@ -20,7 +20,6 @@
     --class-shaman: #0070DE;
 
     // Plate Wearers
-
     --class-warrior: #C79C6E;
     --class-paladin: #F58CBA;
 }
@@ -65,6 +64,11 @@ main {
         }
         li {
             margin-top: 0;
+            &.is-active {
+                a {
+                    color: var(--theme-link-alt, #ececec)
+                }
+            }
         }
     }
 
@@ -83,15 +87,74 @@ main {
     }
 }
 
-.priest-fg { color: var(--class-priest); }
-.mage-fg { color: var(--class-mage); }
-.warlock-fg { color: var(--class-warlock); }
+.priest-fg {
+    color: var(--class-priest);
 
-.rogue-fg { color: var(--class-rogue); }
-.druid-fg { color: var(--class-druid); }
+    a, a:hover {
+        color: var(--class-priest);
+    }
+}
 
-.hunter-fg { color: var(--class-hunter); }
-.shaman-fg { color: var(--class-shaman); }
+.mage-fg {
+    color: var(--class-mage);
 
-.warrior-fg { color: var(--class-warrior); }
-.paladin-fg { color: var(--class-paladin); }
+    a, a:hover {
+        color: var(--class-mage);
+    }
+}
+
+.warlock-fg {
+    color: var(--class-warlock);
+
+    a, a:hover {
+        color: var(--class-warlock);
+    }
+}
+
+.rogue-fg {
+    color: var(--class-rogue);
+
+    a, a:hover {
+        color: var(--class-rogue);
+    }
+}
+
+.druid-fg {
+    color: var(--class-druid);
+
+    a, a:hover {
+        color: var(--class-druid);
+    }
+}
+
+.hunter-fg {
+    color: var(--class-hunter);
+
+    a, a:hover {
+        color: var(--class-hunter);
+    }
+}
+
+.shaman-fg {
+    color: var(--class-shaman);
+
+    a, a:hover {
+        color: var(--class-shaman);
+    }
+}
+
+.warrior-fg {
+    color: var(--class-warrior);
+
+    a, a:hover {
+        color: var(--class-warrior);
+    }
+}
+
+.paladin-fg {
+    color: var(--class-paladin);
+
+    a, a:hover {
+        color: var(--class-paladin);
+    }
+}

@@ -19,6 +19,7 @@
     },
     mounted () {
         let userTheme = 'alliance'
+        //let userTheme = 'horde'
 
         if (userTheme === 'alliance') {
             AllianceTheme()

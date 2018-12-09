@@ -9,7 +9,7 @@
             </thead>
             <tbody>
                 <tr v-for="wClass in costsByClass" :class="`${wClass.cssClass}-fg`">
-                    <td>{{ wClass.wowClass }}</td>
+                    <td><a href="#">{{ wClass.wowClass }}</a></td>
                     <td v-html="$options.filters.gold_html(wClass.cost)"></td>
                 </tr>
             </tbody>
