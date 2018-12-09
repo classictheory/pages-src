@@ -12,10 +12,6 @@
                     <td>{{ wClass.wowClass }}</td>
                     <td v-html="$options.filters.gold_html(wClass.cost)"></td>
                 </tr>
-                <tr>
-                    <td>Warlock</td>
-                    <td>n g</td>
-                </tr>
             </tbody>
         </table>
     </div>
@@ -29,19 +25,19 @@
         return [
           {
             wowClass: 'Hunter',
-            cost: 1000,
+            cost: 0,
           },
           {
             wowClass: 'Mage',
-            cost: 10000,
+            cost: 0,
           },
           {
             wowClass: 'Paladin',
-            cost: 100,
+            cost: 0,
           },
           {
             wowClass: 'Priest',
-            cost: 10,
+            cost: 0,
           },
           {
             wowClass: 'Rogue',
