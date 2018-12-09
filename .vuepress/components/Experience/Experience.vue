@@ -18,20 +18,7 @@
       }
     },
     computed: {
-      columns () {
-        let w = window.innerWidth
-
-        if (w > 1024) {
-          return 4
-        }
-        return 3
-      },
       xpComponent () {
-        let w = window.innerWidth
-        
-        if (w > 1024) {
-          return 'Experience-XPTable-XP4Column'
-        }
         return 'Experience-XPTable-XP3Column'
       }
     }
