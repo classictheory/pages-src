@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Experience Breakpoints</h2>
-        <table>
+        <table class="table">
             <tbody>
                 <tr>
                     <th>1 - 20</th>

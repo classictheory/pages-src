@@ -58,13 +58,23 @@ main {
 .content {
     color: var(--text--primary);
 
+    // Allow breadcrumbs to be inside .content
+    .breadcrumb {
+        ul {
+            margin-left: 0;
+        }
+        li {
+            margin-top: 0;
+        }
+    }
+
     h1, h2, h3, h4, h5, h6 {
         color: var(--text--primary);
     }
 
     // Tables
     .table {
-        thead {
+        thead, tbody {
             th {
                 background: var(--th-bg, #232323);
                 color: var(--th-color, #ececec);
