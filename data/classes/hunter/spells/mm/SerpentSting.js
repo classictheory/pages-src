@@ -65,6 +65,13 @@ const rank7 = new SerpentStingRank({
   damageAmount: 385,
 })
 
+const rank8 = new SerpentStingRank({
+  level: 58,
+  cost: 48000,
+  manaCost: 230,
+  damageAmount: 490,
+})
+
 export const SerpentSting = {
   name: "Serpent Sting",
   damageType: 'Nature',
@@ -78,6 +85,7 @@ export const SerpentSting = {
     5: rank5,
     6: rank6,
     7: rank7,
+    8: rank8,
   },
   tooltip: "Stings the target, cauing {damageAmount} over {duration} sec. Only one Sting per Hunter can be active on any one target.",
   school: 'Marksmanship'

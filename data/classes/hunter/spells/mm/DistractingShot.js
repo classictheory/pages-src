@@ -44,6 +44,13 @@ const rank5 = new DistractingShotRank({
   description: 'Distract the target, causing threat. More effective than Distracting Shot (Rank 4).',
 })
 
+const rank6 = new DistractingShotRank({
+  level: 60,
+  cost: 50000,
+  manaCost: 110,
+  description: 'Distract the target, causing threat. More effective than Distracting Shot (Rank 4).'
+})
+
 export const DistractingShot = {
   name: "Distracting Shot",
   firstLearnable: 12,
@@ -54,6 +61,7 @@ export const DistractingShot = {
     3: rank3,
     4: rank4,
     5: rank5,
+    6: rank6,
   },
   school: 'Marksmanship',
 }

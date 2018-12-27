@@ -44,6 +44,13 @@ const rank5 = new AimedShotRank({
   manaCost: 260,
 })
 
+const rank6 = new AimedShotRank({
+  level: 60,
+  cost: 2500,
+  damageAmount: 600,
+  manaCost: 310,
+})
+
 export const AimedShot = {
   name: "Aimed Shot",
   firstLearnable: 20,// Method of learning unknown, quest?
@@ -54,6 +61,7 @@ export const AimedShot = {
     3: rank3,
     4: rank4,
     5: rank5,
+    6: rank6,
   },
   school: 'Marksmanship'
 }

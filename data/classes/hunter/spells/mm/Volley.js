@@ -22,6 +22,14 @@ const rank2 = new VolleyRank({
   damageAmountPerSecond: 65
 })
 
+const rank3 = new VolleyRank({
+  level: 58,
+  cost: 48000,
+  manaCost: 490,
+  duration: 6,
+  damageAmountPerSecond: 80
+})
+
 export const Volley = {
   type: 'AoE Damage',
   name: "Volley",
@@ -30,6 +38,7 @@ export const Volley = {
   ranks: {
     1: rank1,
     2: rank2,
+    3: rank3,
   },
   tooltip: "Continuously fires a volley of ammo at the target area, causing {damageAmountPerSecond} Arcane damage to enemy targets within 8 yards every second for {duration} sec.",
   school: 'Marksmanship'

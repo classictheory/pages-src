@@ -22,6 +22,14 @@ const rank2 = new TrueshotAuraRank({
   range: 45
 })
 
+const rank3 = new TrueshotAuraRank({
+  level: 60,
+  cost: 2500,
+  duration: 1800, // 30 min
+  attackPower: 100,
+  range: 45
+})
+
 export const TrueshotAura = {
   name: "Trueshot Aura",
   type: 'Group Buff',
@@ -31,6 +39,7 @@ export const TrueshotAura = {
   ranks: {
     1: rank1,
     2: rank2,
+    3: rank3,
   },
   tooltip: "Increases the attack power of party members within 45 yards by {attackPower}. Lasts 30 min.",
   school: 'Marksmanship'

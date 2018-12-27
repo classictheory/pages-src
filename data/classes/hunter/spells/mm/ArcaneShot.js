@@ -58,6 +58,13 @@ const rank7 = new ArcaneShotRank({
   manaCost: 160,
 })
 
+const rank8 = new ArcaneShotRank({
+  level: 60,
+  cost: 50000,
+  damageAmount: 183,
+  manaCost: 190,
+})
+
 export const ArcaneShot = {
   name: "Arcane Shot",
   firstLearnable: 6,
@@ -73,5 +80,6 @@ export const ArcaneShot = {
     5: rank5,
     6: rank6,
     7: rank7,
+    8: rank8,
   },
 }
