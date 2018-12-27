@@ -14,7 +14,6 @@ const rank1 = new SerpentStingRank({
   level: 4,
   cost: 100,
   manaCost: 15,
-  damageType: 'Nature',
   damageAmount: 20,
 })
 
@@ -22,7 +21,6 @@ const rank2 = new SerpentStingRank({
   level: 10,
   cost: 400,
   manaCost: 30,
-  damageType: 'Nature',
   damageAmount: 40,
 })
 
@@ -30,7 +28,6 @@ const rank3 = new SerpentStingRank({
   level: 18,
   cost: 2000,
   manaCost: 50,
-  damageType: 'Nature',
   damageAmount: 80,
 })
 
@@ -38,7 +35,6 @@ const rank4 = new SerpentStingRank({
   level: 26,
   cost: 7000,
   manaCost: 80,
-  damageType: 'Nature',
   damageAmount: 140,
 })
 
@@ -46,7 +42,6 @@ const rank5 = new SerpentStingRank({
   level: 34,
   cost: 12000,
   manaCost: 115,
-  damageType: 'Nature',
   damageAmount: 210,
 })
 
@@ -54,7 +49,6 @@ const rank6 = new SerpentStingRank({
   level: 42,
   cost: 24000,
   manaCost: 150,
-  damageType: 'Nature',
   damageAmount: 290,
 })
 
